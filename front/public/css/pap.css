@@ -1,0 +1,396 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 29, 2017, 4:53:10 PM
+    Author     : ningkikaki
+*/
+
+
+
+@font-face {
+                font-family: myFirstFont;
+				src: url(../fonts/THSarabunNew.ttf);
+            }
+
+            div,p,h1{
+                font-family: myFirstFont !important;
+            }
+			.container{
+				font-family: thsarabunFont !important;
+			}
+            html{
+                height: 100%;
+            }
+
+            body{
+                height: 100%;
+                font-family: myFirstFont;
+                font-size: 25px;
+            }
+
+            .tab-content{
+                border: 1px solid #ddd;
+                border-top: none;
+                padding: 15px;
+            }
+            h3{
+
+                margin-top: 0;
+                font-weight: bold;
+                display: block;
+            }
+            .topichead{
+                font-weight: bold;
+            }
+            .rank{
+                font-weight: bold;
+            }
+            .table{
+                width: 50%;
+            }
+            .fa-plus-square{
+                color: #337ab7;
+                display: inline-block;
+                padding-right: 5px;
+                vertical-align: middle;
+            }
+            .prof{
+                cursor:pointer;
+            }
+            .filter{
+                display: inline-block;
+            }
+            .form-control{
+                height: 40px;
+                font-size: 16px;
+            }
+            .clear{
+                clear: both;
+            }
+            #load-content{
+                margin-top: 5px;
+                display: block;
+            }
+            .navbar{
+                height: 5%;
+            }
+             #search{
+                /*background-image: url('http://findicons.com/files/icons/2813/flat_jewels/512/search.png');
+                background-size: 30px 30px;
+                background-position: calc;
+                background-repeat: no-repeat;
+                padding: 12px 20px 12px 40px;*/
+                border-radius: 30px;
+
+            }
+            .filter-content{
+                height: 20%;
+                background-color: #FBEFF2;
+            }
+            .container{
+                margin-top: 5px;
+            }
+            .navbar-fixed-top{
+                position: relative;
+            }
+            .navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:hover{
+                background-color: inherit;
+            }
+            .form-control{
+                font-size: 20px;
+                height: auto;
+            }
+            h2{
+                font-weight: bold;
+            }
+            .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>th{
+                border-top: none;
+                background-color: #F5EFFB;
+            }
+            @media (min-width: 768px){
+                    .navbar-nav>li>a {
+                        padding-bottom: 5px;
+                    }
+            }
+            div>h2{
+                text-align: center;
+            }
+            #search>tbody>tr:hover{
+                cursor: pointer;
+                background-color: #E6E6E6;
+            }
+            .navbar-brand{
+                padding-top:20px;
+                font-size: 30px;
+                font-weight: bold;
+            }
+            .navbar-nav>li>a{
+                padding-top: 20px;
+            }
+            .navbar-inverse .navbar-brand{
+                color: #E6E6E6;
+            }
+            img{
+                 height: 300px;
+                 width: auto;
+            }
+            .login:hover{
+                color: white;
+            }
+            .btn{
+                font-size: 20px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            h4{
+                font-size: 30px;
+                text-align: center;
+            }
+            .modal-footer{
+                text-align: center;
+            }
+            .form-horizontal .control-label{
+                text-align: left;
+            }
+            .form-horizontal .form-group {
+                margin-left: 0 ;
+                margin-right: auto;
+            }
+            .form-horizontal{
+                margin: 0 auto;
+            }
+            .modal-body{
+                margin: 0 auto;
+            }
+            .navbar-inverse .navbar-collapse{
+                background-color: #333;
+            }
+            .navbar-collapse.collapse.in>.login{
+                float: left !important;
+                padding-left: 15px;
+            }
+            .navbar-nav.login{
+                margin-top: 0;
+                margin-bottom: 0;
+                padding-bottom: 20px;
+            }
+           .navbar-collapse.collapse.in> ul.navbar-nav:last-child{
+                margin-bottom: 0;
+            }
+            #left {
+                border-color: #d8edf8;
+            }
+            #left .handle {
+                background-color: #d8edf8;
+                padding: 15px;
+                border-color: #addedd;
+            }
+            .ui-slideouttab-panel.ui-slideouttab-left.ui-slideouttab-panel-reverse{
+                /*bottom: 600px !important;*/
+                top: 60px;
+            }
+            .ui-slideouttab-handle-reverse{
+/*                bottom: auto !important;*/
+/*                top: 45px;*/
+            }
+            #left>a,#left>p{
+                color: black;
+            }
+            * {
+            margin: 0;
+            padding: 0;
+            outline: none;
+
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+/*        body {
+            background: #eee;
+            color: #444;
+            -webkit-font-smoothing: antialiased;
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            height: auto !important;
+            height: 100%;
+            min-height: 100%;
+            text-rendering: optimizeLegibility
+        }*/
+
+        div.wrapper {
+          margin: 20px auto;
+          width: 100%;
+        }
+
+        p {
+          font-family: georgia;
+          font-size: 1rem;
+          line-height: 25px;
+          margin: 24px 0;
+          text-align: center;
+        }
+
+        nav.vertical {
+          border-radius: 4px;
+          box-shadow: 0 0 10px rgba(0,0,0,.15);
+          overflow: hidden;
+          text-align: center;
+        }
+
+          nav.vertical > ul {
+            list-style-type: none;
+          }
+
+            nav.vertical > ul > li {
+              display: block;
+            }
+
+      nav.vertical > ul > li > label,
+      nav.vertical > ul > li > a {
+        background-color: rgb(157, 34, 60);
+        background-image: -webkit-linear-gradient(135deg, rgb(114, 51, 98), rgb(157, 34, 60));
+        background-image: -moz-linear-gradient(135deg, rgb(114, 51, 98), rgb(157, 34, 60));
+        background-image: -o-linear-gradient(135deg, rgb(114, 51, 98), rgb(157, 34, 60));
+        background-image: linear-gradient(135deg, rgb(114, 51, 98), rgb(157, 34, 60));
+        border-bottom: 1px solid rgba(255,255,255,.1);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.1), 0 1px 1px rgba(0,0,0,.1);
+        color: rgb(255,255,255);
+        display: block;
+        font-size: .85rem;
+        font-weight: 500;
+        height: 50px;
+        letter-spacing: .5rem;
+        line-height: 50px;
+        text-shadow: 0 1px 1px rgba(0,0,0,.1);
+        text-transform: uppercase;
+        transition: all .1s ease;
+      }
+
+        nav.vertical > ul > li > label:hover,
+        nav.vertical > ul > li > a:hover {
+         background-color: rgb(114, 51, 98);
+         background-image: -webkit-linear-gradient(150deg, rgb(114, 51, 98), rgb(114, 51, 98));
+         background-image: -moz-linear-gradient(150deg, rgb(114, 51, 98), rgb(114, 51, 98));
+         background-image: -o-linear-gradient(150deg, rgb(114, 51, 98), rgb(114, 51, 98));
+         background-image: linear-gradient(150deg, rgb(114, 51, 98), rgb(114, 51, 98));
+         cursor: pointer;
+        }
+
+        nav.vertical > ul > li > label + input {
+          display: none;
+          visability: hidden;
+        }
+
+          nav.vertical > ul > li > div {
+            background-color: rgb(255,255,255);
+            max-height: 0;
+            overflow: hidden;
+            transition: all .5s linear;
+          }
+
+            nav.vertical > ul > li > label + input:checked + div {
+              max-height: 500px;
+            }
+
+          nav.vertical > ul > li > div > ul {
+            list-style-type: none;
+          }
+
+            nav.vertical > ul > li > div > ul > li > a {
+             background-color: rgb(255,255,255);
+             border-bottom: 1px solid rgba(0,0,0,.05);
+             color: #333331;
+             display: block;
+             font-size: 16px;
+             padding: 10px 0;
+             text-decoration: none;
+             transition: all 0.15s linear;
+            }
+
+              nav.vertical > ul > li > div > ul > li:hover > a {
+                background-color: lightBlue;
+                color: rgb(255,255,255);
+                padding: 10px 0 10px 50px;
+              }
+
+              nav.vertical > ul > li > label{
+                  font-size: 18px;
+              }
+              div>h1{
+                  font-weight: bold;
+              }
+              div.col-md-3>p{
+                  font-size:18px;
+              }
+              .guide{
+                  text-align: center;
+                  bottom: 0;
+              }
+              .des{
+                  max-width: 280px;
+                  margin-top: 5px;
+                  min-height: 236px;
+                  max-height: 300px;
+                  border: 1px solid black;
+                  border-radius: 5px;
+                  margin: 6px;
+              }
+			  .vertnav{
+				width:25%;
+				position: absolute;
+				left:0;
+				top: 40px;
+			}
+			.content{
+				width: 70%;
+				position: absolute;
+				top: 40px;
+				right: 30px;
+				margin-left: 30px;
+			}
+
+            	.clickable{
+                	cursor:pointer;
+            	}
+
+		.filtercontent{
+			width:10%;
+			position: absolute;
+			left:15px;
+			font-size: 20px;
+		}
+		.filtercontent>ul{
+			padding: 8px;
+			list-style: none;
+		}
+		.filtercontent>ul>span{
+			font-weight: bold;
+		}
+		.filtercontent>ul>li{
+			cursor: pointer;
+		}
+
+		.searchCon{
+			width: 90%;
+            margin-left:40px;
+		}
+
+        .active{
+            font-weight:bold;
+        }
+
+
+        .searchres h3{
+            font-size:32px;
+
+        }
+
+        .searchres h5{
+            font-size: 17px;
+
+        }
