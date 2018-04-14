@@ -1,0 +1,147 @@
+
+<div class="container">
+    <div class="row">
+        <div class="pull-right col-md-2">
+            <select class="form-control">
+                <option>ปี</option>
+            </select>
+        </div>
+        <div class="pull-right col-md-2">
+            <select class="form-control">
+                <option>คณะ</option>
+            </select>
+        </div>
+    </div>
+    <hr>
+    <select id="reportstat" class="form-control">
+        <option value="pubpap" selected="">Published paper report</option>
+        <option value="pubperres">Published paper per Researcher's report</option>
+        <option value="cit">Citation</option>
+        <option value="citperpap">Citation per report paper</option>
+        <option value="citperres">Citation per researcher</option>
+    </select>
+
+    <div id="pubpap" class="">
+        <h2>Published paper report</h2>
+        <div align="center">กราฟ</div>
+        <table class="table" align="center">
+            <tr>
+                <th>Published Paper</th>
+                <th>year1</th>
+                <th>year2</th>
+            </tr>
+            <tr>
+                <td>Published Paper#1</td>
+                <td>01</td>
+                <td>02</td>
+            </tr>
+            <tr>
+                <td>Published Paper#2</td>
+                <td>00</td>
+                <td>00</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <div id="pubperres" class="hidden">
+        <h2>Published paper per Researcher's report</h2>
+        <div align="center">กราฟ</div>
+        <table class="table"  align="center">
+            <tr>
+                <th>Published Paper</th>
+                <th>year1</th>
+                <th>year2</th>
+            </tr>
+            <tr>
+                <td>Published Paper#1</td>
+                <td>03</td>
+                <td>04</td>
+            </tr>
+            <tr>
+                <td>Published Paper#2</td>
+                <td>00</td>
+                <td>00</td>
+            </tr>
+
+        </table>
+    </div>
+
+
+    <div id="cit" class="hidden">
+        <h2>Citation</h2>
+        <div align="center">กราฟ</div>
+        <table class="table"  align="center">
+            <tr>
+                <th>Published Paper</th>
+                <th>year1</th>
+                <th>year2</th>
+            </tr>
+            <tr>
+                <td>Published Paper#1</td>
+                <td>05</td>
+                <td>06</td>
+            </tr>
+            <tr>
+                <td>Published Paper#2</td>
+                <td>00</td>
+                <td>00</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <div id="citperpap" class="hidden">
+        <h2>Citation per report paper</h2>
+        <div align="center">กราฟ</div>
+        <table class="table"  align="center">
+            <tr>
+                <th>Published Paper</th>
+                <th>year1</th>
+                <th>year2</th>
+            </tr>
+            <tr>
+                <td>Published Paper#1</td>
+                <td>07</td>
+                <td>08</td>
+            </tr>
+            <tr>
+                <td>Published Paper#2</td>
+                <td>00</td>
+                <td>00</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <div id="citperres" class="hidden">
+        <h2>Citation per Researcher</h2>
+        <div align="center">กราฟ</div>
+        <table class="table"  align="center">
+            <tr>
+                <th>Published Paper</th>
+                <th>year1</th>
+                <th>year2</th>
+            </tr>
+            <tr>
+                <td>Published Paper#1</td>
+                <td>09</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Published Paper#2</td>
+                <td>00</td>
+                <td>00</td>
+            </tr>
+
+        </table>
+    </div>
+</div>
+<script>
+    var rep = 'pubpap';
+    $('#reportstat').on('change',function(){
+        $('#'+rep).addClass('hidden');
+        rep = $(this)[0].value;
+        $('#'+rep).removeClass('hidden');
+    });
+</script>

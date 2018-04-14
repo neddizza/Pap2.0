@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+    <title>PAP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://rawgit.com/hawk-ip/jquery.tabSlideOut.js/master/jquery.tabSlideOut.js"></script>
+    <link rel="stylesheet" href="https://rawgit.com/hawk-ip/jquery.tabSlideOut.js/master/jquery.tabSlideOut.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/f4d7557894.js"></script>
+    <link href="css/jquery.tabSlideOut.css" rel="stylesheet" type="text/css"/>
+    <link href="css/pap.css" rel="stylesheet" type="text/css"/>
+    <style>
+        @font-face {
+            font-family: myFirstFont;
+            src: url(fonts/thaisanslite_r1.ttf);
+        }
+        .navbar-inverse .navbar-nav>li>a{
+            color: #E6E6E6;
+        }
+		.dropdown-menu>li{
+			font-size: 18px;
+			background-color:#080808;
+			border-color: #101010;
+			padding: 5px;
+		}
+		.dropdown-menu>li>a{
+			color: #E6E6E6;
+		}
+		.dropdown-menu{
+			padding:  0;
+			
+		}
+
+
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div style="">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">PaperAnalysisPlatform</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#index" id="home">Home </a></li>
+                <li><a href="#search" id="search">Search</a></li>
+				<li><a href="#search" id="search">Overview</a></li>
+                <li class="dropdown">
+					<a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Trends<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+							<li><a href="#trend">Trends</a></li>
+							<li><a href="#cloud">Trends (TU dataset)</a></li>
+					</ul>
+				</li>
+                <!--li><a href="#furnish" id="furnish">Furnished</a></li-->
+                <li><a href="#report" id="report">Report</a></li>
+            </ul>
+			
+</div>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+<div class="clear"> </div>
+<div id="load-content" style="height: 95%;">
+</div>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+    var a = location.hash;
+    var j = a.split('#')[1];
+    if(j===null){
+        $('#load-content').load('index.html');
+    }
+    else{
+        $('#load-content').load(j+'.html');
+    }
+    window.addEventListener("hashchange",function(){
+        a = location.hash;
+        j = a.split('#')[1];
+        $('#load-content').load(j+'.html');
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<html>
+    <head>
+    <title>PAP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://rawgit.com/hawk-ip/jquery.tabSlideOut.js/master/jquery.tabSlideOut.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/f4d7557894.js"></script>
+    <link href="css/pap.css" rel="stylesheet" type="text/css"/>
+    <style>
+        @font-face {
+            font-family: myFirstFont;
+            src: url(fonts/thaisanslite_r1.ttf);
+        }
+        .navbar-inverse .navbar-nav>li>a{
+            color: #E6E6E6;
+        }
+		.navbar.navbar-inverse.navbar-fixed-top{
+			margin:  0;
+		}
+		.vertnav{
+			width:25%;
+			position: absolute;
+			left:0;
+			top: 40px;
+		}
+		.container{
+			width: 75%;
+			padding: 15px;
+			position: absolute;
+			right: 0;
+		}
+		div.wrapper {
+          width: 100%;
+        }
+		
+    </style>
+</head>
+    <body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">PaperAnalysisPlatform</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#index" id="home">Home </a></li>
+                <li><a href="#search" id="search">Search</a></li>
+                <li><a href="#trend" id="trends">Trends</a></li>
+                <!--li><a href="#furnish" id="furnish">Furnished</a></li-->
+                <li><a href="#report" id="report">Report</a></li>
+            </ul>
+            <div class="nav navbar-nav login" style="color: #E6E6E6; cursor: pointer; float: right; padding-right: 15px;" data-toggle="modal" data-target="#login">
+                Log in
+            </div>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+
+
+<div class="modal fade" id="login" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">LOG IN</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="email" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-9">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd" class="col-sm-2 control-label">Password</label>
+                        <div class="col-sm-9">
+                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Remember me
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">SIGN IN</button>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+</div>
+
+<!-- content -->
+<div class="vertnav">
+	 <div class="wrapper" style="overflow: auto;">
+        <nav class="vertical">
+            <ul>
+                <li>
+                    <label for="blog">Institute</label>
+                    <input type="radio" name="verticalMenu" id="blog" />
+                    <div>
+                        <ul>
+                            <li><a href="#">CU</a></li>
+                            <li><a href="#">TU</a></li>
+                            <li><a href="#">KU</a></li>
+                            <li><a href="#">MU</a></li>
+							<li><a href="#">KKU</a></li>
+							<li><a href="#">PSU</a></li>
+							<li><a href="#">...</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <label for="work">Faculty</label>
+                    <input type="radio" name="verticalMenu" id="work" />
+                    <div>
+                        <ul style="overflow: auto; height: 500px;">
+                            <li><a href="#">Law</a></li>
+                            <li><a href="#">Commerce and Accountancy</a></li>
+                            <li><a href="#">Political Science</a></li>
+							<li><a href="#">Economics</a></li>
+							<li><a href="#">Social Administration</a></li>
+							<li><a href="#">Liberal Arts</a></li>
+							<li><a href="#">Journalism and Mass Communication</a></li>
+							<li><a href="#">Sociology and Anthropology</a></li>
+							<li><a href="#">Science and Technology</a></li>
+							<li><a href="#">Engineering</a></li>
+							<li><a href="#">Medicine</a></li>
+							<li><a href="#">Architecture and Planning</a></li>
+							<li><a href="#">Sirindhorn International Institute of Technology</a></li>
+							<li><a href="#">Pharmaceutical Sciences</a></li>
+							<li><a href="#">Learning Sciences and Education</a></li>
+		
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+</div>
+<div class="container">
+   <center>Graph here</center>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://rawgit.com/hawk-ip/jquery.tabSlideOut.js/master/jquery.tabSlideOut.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".handle").on('click',function() {
+            console.log("click!");
+        });
+
+        $('#left').tabSlideOut({
+            tabLocation: 'left',
+            offsetReverse: true,
+            handleOffsetReverse: true
+        });
+
+    });
+
+
+</script>
+</body>
+</html>
